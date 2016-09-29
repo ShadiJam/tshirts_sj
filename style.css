@@ -1,3 +1,22 @@
-﻿body
-{
+﻿
+}*, *:before, *:after {
+    box-sizing:border-box;
+}
+
+ .main_grid {
+     max-width: 800px;
+     background-color: white;
+     margin:auto;
+ }
+ .main_grid > * {
+     display: inline-block;
+     text-align: center;
+ }
+
+.shirt {
+    display: inline block;
+    border: 2px solid blue;
+    align-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }

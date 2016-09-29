@@ -1,0 +1,9 @@
+﻿
+*, *:before, *:after {
+    box-sizing:border-box;
+}
+
+.shirt {
+    display: inline block;
+    border: 2px solid blue;
+}
