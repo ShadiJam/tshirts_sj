@@ -1,9 +1,33 @@
 ﻿
-*, *:before, *:after {
-    box-sizing:border-box;
+* {
+    &, &:before, &:after {
+        box-sizing:border-box;
+    }
 }
+$blue: #4783da;
+.grid {
+    text-align:justify;
+    font-size: 0; (you put this in so that empty space is not accounted for)
 
+    & > * {
+        display: inline-block;
+        font-size: medium;
+        text-align:left;
+    }
+    &:after {
+        content: "";
+        display: inline-block;
+        width: 100%;
+    }
+}
 .shirt {
-    display: inline block;
-    border: 2px solid blue;
+    border: 1px solid $blue;
+    min-height: 100vw;
+
+    .bigshirt {
+        border: 1px solid $blue;
+        min-height: 120vw
+    }
+
+    .icons {}
 }
