@@ -1,1 +1,89 @@
-*,:before,:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}.grid{text-align:justify;font-size:0}(you put this in so that empty space is not accounted for) .grid>*{display:inline-block;font-size:medium;text-align:left}.grid:after{content:"";display:inline-block;width:100%}.shirt{border:1px solid #4783da;min-height:100vw}.shirt .bigshirt{border:1px solid #4783da;min-height:120vw}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+
+.container {
+    display:block;
+    position:relative;
+    width:100%;
+}
+.column {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 30px;
+    padding: 0;
+    min-width: 350px;
+    min-width: 600px; 
+}
+
+.img {
+    border: 3px solid #47a3da;
+    border-bottom:none;
+
+}
+span {
+    float: right;
+}
+img.front {
+    padding: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.icon > * {
+    height: 100px;
+    width:100px;
+    align-content:center;
+    display: inline-block;
+    border: 3px solid #47a3da;
+    float:left;
+    margin-bottom: 20px;
+}
+
+div.box {
+    width: 500px;
+}
+.icon {
+    padding:0;
+}
+.box span {
+    border: 3px solid #47a3da;
+}
+.text h2 {
+    color: #47a3da;
+    font-family:Arial, Helvetica, sans-serif;
+    display: inline-block;
+    margin-top: 0;
+    padding-top: 2px;
+    font-size: 2em;
+    font-weight:100;
+}
+.text span {
+    color: #47a3da;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+.icon img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60px;
+    padding-top:10px;
+}
+span.rot img {
+    display: block;
+    width: 40px;
+    padding: 5px;
+}
+.size{
+   font-size: 2em;
+   color: #47a3da;
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 30px; 
+}
+li.color img {
+    margin-top:20px;
+    width: 40px;
+}

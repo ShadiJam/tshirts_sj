@@ -1,33 +1,46 @@
-﻿
-* {
-    &, &:before, &:after {
-        box-sizing:border-box;
-    }
+﻿*, *:before, *:after {
+    box-sizing: border-box;
 }
-$blue: #4783da;
-.grid {
-    text-align:justify;
-    font-size: 0; (you put this in so that empty space is not accounted for)
 
-    & > * {
-        display: inline-block;
-        font-size: medium;
-        text-align:left;
-    }
-    &:after {
-        content: "";
-        display: inline-block;
-        width: 100%;
-    }
+$blue: #47a3da;
+$pink: rgb(212,130,170);
+$yellow: rgb(220, 176, 125);
+
+.whitebox {
+   
+    margin: auto;
+    padding: 30px;
+    border: 2px dashed green;
+    max-width: 800px;
 }
+.whitebox > * {
+    display:inline-block;
+    max-width: 30vw;
+    position:relative;
+
+
 .shirt {
-    border: 1px solid $blue;
-    min-height: 100vw;
-
-    .bigshirt {
-        border: 1px solid $blue;
-        min-height: 120vw
-    }
-
-    .icons {}
+    display:inline-block;
+    border: 1px dashed red;
+    position: relative;
+    max-width: 30vw;
 }
+.rotate {
+    border: 1px solid black;
+    display: block;
+    float: right;
+}
+.icon {
+    display: inline-block;
+    border: 1px solid blue;
+    width: 100px;
+    height: 100px;
+}
+img {
+    display: block;
+    margin: auto;
+}
+
+
+
+
