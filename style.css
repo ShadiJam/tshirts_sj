@@ -19,16 +19,37 @@
 .img {
     border: 3px solid #47a3da;
     border-bottom:none;
+    width: 100%;
+    perspective: 500px;
+    margin-right: 0;
 
 }
-span {
-    float: right;
+span:hover + .img .front { 
+    transform: rotateY(180deg) translateZ(0px);
+}
+span:hover + .img .back { 
+    transform: rotateY(360deg) translateZ(0px);
 }
 img.front {
     padding: 30px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    backface-visibility:hidden;
+}
+img.back {
+    position:absolute;
+    backface-visibility: hidden;
+    padding: 30px;
+    top: 0;
+    left: 0;
+
+}
+img.front:hover {
+    transition: all .25s ease;
 }
 .icon > * {
     height: 100px;
@@ -47,10 +68,9 @@ div.box {
 .icon {
     padding:0;
     list-style-type: none;
+    overflow:auto;
 }
-.box span {
-    border: 3px solid #47a3da;
-}
+
 .text h2 {
     color: #47a3da;
     font-family:Arial, Helvetica, sans-serif;
@@ -77,6 +97,11 @@ span.rot img {
     display: block;
     width: 40px;
     padding: 5px;
+    float: right;
+    position: relative;
+    z-index:100;
+    border: 3px solid #47a3da;
+
 }
 .size {
    font-size: 2em;
